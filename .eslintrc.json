@@ -1,0 +1,47 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "rules": {
+    "indent": [
+      "error",
+      "tab"
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": 0,
+    "no-console": 0,
+    "no-tabs": 0,
+    "strict": 0,
+    "wrap-iife": 0,
+    "comma-dangle": [
+      2,
+      "never"
+    ],
+    "yoda": 0,
+    "func-names": 0,
+    "newline-per-chained-call": 0,
+    "arrow-parens": 0,
+    "quote-props": 0,
+    "arrow-body-style": 0,
+    "no-use-before-define": 0,
+    "max-len": 0,
+    "no-param-reassign": 0,
+    "radix": 0,
+    "array-callback-return": 0,
+    "padded-blocks": 0,
+    "prefer-destructuring": 0,
+    "no-alert": 0,
+    "no-plusplus": 0,
+    "operator-assignment": 0
+  },
+  "globals": {
+  }
+}

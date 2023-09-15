@@ -1,0 +1,17 @@
+---
+const { title, icon } = Astro.props
+---
+
+<section>
+  <div class="pb-12">
+    <h2 class="text-2xl sm:text-3xl mb-6 mt-4">{title}</h2>
+    <div class="sm:flex gap-8 max-w-2xl w-full text-center sm:text-left">
+      <div>
+        <i class="material-icons text-9xl">{icon}</i>
+      </div>
+      <div>
+        <slot />
+      </div>
+    </div>
+  </div>
+</section>

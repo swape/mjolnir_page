@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --s: 300px;
+  --c1: #14181c;
+  --c2: #000;
+  --c3: #222;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.7em;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  text-wrap: balance;
+
+  background-color: #ffffff;
+  background-image: radial-gradient(#a6b7c5 1px, #ffffff 1px);
+  background-size: 20px 20px;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-family: 'Prata', sans-serif;
+}
+
+section > div {
+  @apply flex flex-col justify-center items-center p-5;
+}
+
+section:nth-of-type(even) {
+  @apply text-white bg-slate-950;
+  background: repeating-conic-gradient(from 30deg, #0000 0 120deg, var(--c3) 0 180deg) calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+    repeating-conic-gradient(from 30deg, var(--c1) 0 60deg, var(--c2) 0 120deg, var(--c3) 0 180deg);
+  background-size: var(--s) calc(var(--s) * 0.577);
+  background-attachment: fixed;
+}
+
+section i.material-icons {
+  transition: all 500ms ease;
+}
+section:hover i.material-icons {
+  scale: 1.2;
+  background: -webkit-linear-gradient(#6e1c57, #293a9d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+section h2 {
+  transition: scale 500ms ease;
+}
+section:hover h2 {
+  scale: 1.1;
+}
