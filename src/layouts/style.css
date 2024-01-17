@@ -55,7 +55,7 @@ section:hover h2 {
 }
 
 .animation-fade-in{
-  animation-timeline: view(block 90% 40%);
+  animation-timeline: view(block 100% 40%);
   animation-fill-mode: both;
   animation-duration: 1ms;
   animation-timing-function: linear;
