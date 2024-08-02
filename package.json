@@ -1,18 +1,16 @@
 {
   "name": "mjolnirmedia",
-  "version": "1.0.1",
-  "description": "homepage for mjolnir media",
+  "version": "1.0.2",
+  "description": "Homepage for Mjolnir Media",
   "main": "public/index.html",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
-    "deploy": "firebase deploy --only hosting"
+    "preview": "astro preview"
   },
   "author": "Alireza Balouch",
   "license": "ISC",
-
   "devDependencies": {
     "sharp": "^0.33.4",
     "astro": "^4.13.0",
