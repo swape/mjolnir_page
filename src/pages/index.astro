@@ -2,52 +2,26 @@
 import { Image } from 'astro:assets'
 import mmLogo from '../img/mm-logo.png'
 import Layout from '../layouts/Layout.astro'
-import Card from '../components/Card.astro'
 ---
 
 <Layout>
   <header>
-    <div class="flex flex-col items-center px-5 container mx-auto">
-      <Image src={mmLogo} alt="Mjolnir Media AS" class="w-52 mb-10 mt-16" />
-      <h1 class="text-4xl sm:text-8xl text-center leading-normal mb-8">Mjolnir Media</h1>
-      <p class="pt-8 px-5 text-center sm:text-2xl pb-10">
-        Mjolnir Media er et fremragende webtjenestefirma dedikert til å gi våre kunder kreative og skreddersydde digitale løsninger. Vårt team av erfarne utviklere, designere og
-        strateger arbeider sammen for å levere førsteklasses nettbaserte tjenester som hjelper bedrifter med å vokse og trives i den digitale tidsalderen.
-      </p>
-    </div>
+      <Image src={mmLogo} alt="Mjolnir Media AS" />
+      <h1>Mjolnir Media</h1>
   </header>
-
-  <Card title="Systemutvikling" icon="web">
+  <main>
     <p>
-      Mjolnir Media tilbyr utvikling av systemer / webportaler som er 100% tilpasset bedriftens forretningsprosess. Vi kan hjelpe deg med å utvikle systemer som ikke finnes noe
-      standard løsninger for. Vi utvikler skreddersydde webapplikasjoner for å automatisere forretningsprosesser og forbedre effektiviteten.
+      Hei! trenger du hjelp med din hjemmeside, design eller andre webtjenester?
+      <br>
+      Send en <a href="mailto:swape@swape.net" rel="noopener"><i class="material-icons">email</i> e-post</a>, så kan vi finne en fin løsning til fin pris.
     </p>
-  </Card>
+  </main>
 
-  <Card title="Vårt Mål" icon="developer_board">
-    <p>
-      Vi tror på å bygge varige forhold med våre kunder ved å levere tjenester av høyeste kvalitet. Vårt mål er å være din pålitelige partner når det gjelder digitale behov. Vi
-      jobber tett med våre kunder for å forstå deres visjon og mål, og deretter utforme løsninger som oversetter den visjonen til virkelighet.
-    </p>
-  </Card>
+  <footer role="contentinfo">
 
-  <Card title="Andre webtjenester" icon="device_unknown">
-    <div>
-      Mjolnir Media kan hjelper deg med:
-      <ul class="sm:list-disc sm:ml-6 mt-3">
-        <li>Logo og andre grafiske elementer</li>
-        <li>Rådgivning</li>
-        <li>Optimalisering av websider og databaser</li>
-        <li>Andre web-relaterte løsniger</li>
-      </ul>
-    </div>
-  </Card>
-
-  <footer role="contentinfo" class="bg-slate-950 text-white p-5">
-    <div class="container mx-auto text-center sm:flex gap-8 justify-between">
       <div>&copy; Mjolnir Media AS</div>
       <div><a href="mailto:swape@swape.net" rel="noopener"><i class="material-icons">email</i></a></div>
       <div>Org nr: 916 698 844 MVA</div>
-    </div>
+
   </footer>
 </Layout>
