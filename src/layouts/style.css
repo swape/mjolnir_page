@@ -7,23 +7,23 @@ body {
   background-color: #ffffff;
   text-align: center;
   color: #222222;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
-a{
+a {
   border-radius: 10px;
   transition: all 0.3s;
   text-decoration: none;
   color: #222222;
 
-  &:hover{
+  &:hover {
     outline: 10px solid #003485;
     background-color: #003485;
     color: white;
   }
 
-  .material-icons{
+  .material-icons {
     font-size: 18px;
     line-height: initial;
     translate: 0 3px;
@@ -34,7 +34,6 @@ h1 {
   font-family: 'Prata', sans-serif;
   font-size: 70px;
   line-height: 1.2;
-  text-shadow: 0 0 4px rgba(255, 255, 255, 0.4);
 }
 
 header {
@@ -46,21 +45,22 @@ header {
   padding-block-start: 3vh;
   justify-content: space-evenly;
 
-  img{
+  img {
     width: 150px;
     height: 162px;
   }
 }
-main{
+main {
   p {
     background-color: white;
     padding: 40px 40px 150px;
   }
 }
 
-footer{
+footer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 24px;
   flex-wrap: wrap;
   background-color: black;
   color: white;
@@ -70,8 +70,7 @@ footer{
   right: 0;
   bottom: 0;
 
-  a{
+  a {
     color: white;
   }
 }
-
