@@ -13,6 +13,6 @@
   "license": "ISC",
   "devDependencies": {
     "sharp": "^0.33.5",
-    "astro": "^4.15.9"
+    "astro": "^4.16.10"
   }
 }
