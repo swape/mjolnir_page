@@ -6,21 +6,19 @@ body {
   text-wrap: balance;
   background-color: #ffffff;
   text-align: center;
-  color: #222222;
+  color: #111;
   margin: 0;
   padding: 0;
 }
 
 a {
-  border-radius: 10px;
-  transition: all 0.3s;
   text-decoration: none;
   color: #222222;
+  border-bottom: 1px solid #ccc;
 
   &:hover {
-    outline: 10px solid #003485;
-    background-color: #003485;
-    color: white;
+    border-bottom: 1px solid #666;
+    color: #404fc1;
   }
 
   .material-icons {
@@ -30,10 +28,19 @@ a {
   }
 }
 
+a:hover  .material-icons {
+  transition: all 0.3s;
+  scale: 1.2;
+}
+
 h1 {
   font-family: 'Prata', sans-serif;
   font-size: 70px;
   line-height: 1.2;
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
 }
 
 header {
@@ -45,15 +52,37 @@ header {
   padding-block-start: 3vh;
   justify-content: space-evenly;
 
+  @media(max-width: 768px) {
+    min-height: auto;
+  }
+
   img {
     width: 150px;
     height: 162px;
+
+    @media(max-width: 768px) {
+      width: 100px;
+      height: 108px;
+    }
   }
 }
 main {
+  justify-items: center;
+  margin-bottom: 120px;
+
+  @media(max-width: 768px) {
+    margin-bottom: 180px;
+  }
+
   p {
     background-color: white;
-    padding: 40px 40px 150px;
+    max-width: 42ch;
+    padding: 16px 32px 0;
+    text-align: left;
+
+    @media(max-width: 768px) {
+      text-align: center;
+    }
   }
 }
 
@@ -69,6 +98,10 @@ footer {
   left: 0;
   right: 0;
   bottom: 0;
+
+  @media(max-width: 768px) {
+    gap: 12px;
+  }
 
   a {
     color: white;
