@@ -16,5 +16,6 @@
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "display": "standalone",
+  "short_name": "MM",
   "start_url": "https://mjolnirmedia.no"
 }
