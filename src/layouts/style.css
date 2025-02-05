@@ -1,3 +1,6 @@
+:root{
+  --gradient-degree: 110deg;
+}
 body {
   font-family: system-ui, sans-serif;
   line-height: 1.7em;
@@ -26,6 +29,7 @@ a {
     font-size: 18px;
     line-height: initial;
     translate: 0 3px;
+    animation: alternate 3s infinite pulsate;
   }
 }
 
@@ -45,22 +49,36 @@ h1 {
 }
 
 header {
-  background-image: linear-gradient(110deg in oklab, oklch(50% 0.5 340) 0%, oklch(65% 0.19 254) 100%);
   min-height: min(400px, 60vh);
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-block-start: 3vh;
   justify-content: space-evenly;
+  overflow: hidden;
+  position: relative;
+
+
+  &:after{
+    background-image: linear-gradient(120deg in oklab, oklch(50% 0.5 340) 0%, oklch(65% 0.19 254) 100%);
+    animation: alternate 3s infinite rotate-deg;
+    content: '';
+    display: block;
+    z-index: -1;
+    position: absolute;
+    inset: calc(90svw* -1);
+  }
 
   @media (max-width: 768px) {
     min-height: auto;
-    padding-top: 100px;
+    padding-top: 24px;
   }
 
   img {
     width: 150px;
     height: 162px;
+
+    animation: alternate 20s infinite pulsate;
 
     @media (max-width: 768px) {
       width: 100px;
@@ -111,5 +129,24 @@ footer {
 
   a {
     color: white;
+  }
+}
+
+@keyframes rotate-deg {
+    to {
+      rotate: 360deg
+    }
+}
+
+@keyframes pulsate{
+  0%{
+    scale: 1;
+  }
+  50%{
+    scale: 1.05;
+    rotate: 5deg;
+  }
+  100%{
+    scale: 1;
   }
 }
