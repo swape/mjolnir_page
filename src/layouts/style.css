@@ -55,8 +55,7 @@ header {
   overflow: hidden;
   position: relative;
 
-
-  &:after{
+  &:after {
     background-image: linear-gradient(120deg in oklab, oklch(50% 0.5 340) 0%, oklch(65% 0.19 254) 100%);
     animation: alternate 3s infinite rotate-deg;
     content: '';
@@ -83,6 +82,7 @@ header {
     }
   }
 }
+
 main {
   justify-items: center;
   margin-bottom: 120px;
@@ -136,14 +136,11 @@ footer {
 }
 
 @keyframes pulsate{
-  0%{
+  0%, 100% {
     scale: 1;
   }
-  50%{
+  50% {
     scale: 1.05;
     rotate: 5deg;
-  }
-  100%{
-    scale: 1;
   }
 }
