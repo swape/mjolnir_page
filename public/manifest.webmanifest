@@ -1,5 +1,5 @@
 {
-  "name": "mjolnir",
+  "name": "swape",
   "icons": [
     {
       "src": "/favicons/android-chrome-192x192.png",
@@ -16,6 +16,6 @@
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "display": "standalone",
-  "short_name": "MM",
-  "start_url": "https://mjolnirmedia.no"
+  "short_name": "SWAPE",
+  "start_url": "https://swape.net"
 }

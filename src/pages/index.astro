@@ -1,33 +1,30 @@
 ---
-import { Image } from 'astro:assets'
-import mmLogo from '../img/mm-logo.png'
 import Layout from '../layouts/Layout.astro'
 ---
 
 <Layout>
   <header>
-    <Image src={mmLogo} alt="Mjolnir Media AS" />
-    <h1>Mjolnir Media</h1>
+    <h1>Swape.net</h1>
   </header>
   <main>
-    <p>
-      Hei!<br />
-      Jeg heter Alireza Balouch og jeg driver Mjolnir Media AS. Jeg er en webutvikler og designer som lager hjemmesider og andre webtjenester.
-      <br /><br />
-      Trenger dere hjelp med deres hjemmeside, design eller andre webtjenester?
-      <br />
-      Send en <a href="mailto:swape@swape.net" rel="noopener"><i class="material-icons">email</i> e-post</a>, så kan vi finne en fin løsning til fin pris.
-    </p>
+    <p>Hi! This is where I put my stuff. Feel free to peak around.</p>
 
     <p>
-      Du kan finne mer informasjon om meg på <a href="https://www.linkedin.com/in/swape/" rel="noopener" target="_blank">LinkedIn <i class="material-icons">north_east</i></a> og
+      More info about me on <a href="https://www.linkedin.com/in/swape/" rel="noopener" target="_blank">LinkedIn <i class="material-icons">north_east</i></a> and
       <a href="https://github.com/swape" rel="noopener" target="_blank">GitHub <i class="material-icons">north_east</i></a>.
     </p>
+
+    <h2>Projects:</h2>
+    <ol>
+      <li><a href="https://konserter.swape.net/" target="_blank">Konserter</a> Register your concerts. (only in norwegian)</li>
+      <li><a href="https://js-book.swape.net/" target="_blank">Learn JS</a> A Javascript book by me :)</li>
+      <li><a href="https://brixit.swape.net/" target="_blank">Brixit</a> Draw and unleash your inner artist like it was 1980s</li>
+    </ol>
   </main>
 
   <footer role="contentinfo">
-    <div>&copy; Mjolnir Media AS</div>
+    <div>&copy; Swape.net</div>
     <div><a href="mailto:swape@swape.net" rel="noopener"><i class="material-icons">email</i></a></div>
-    <div>Org nr: 916 698 844 MVA</div>
+    <div>Don't call me and I don't call you.</div>
   </footer>
 </Layout>

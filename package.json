@@ -1,7 +1,7 @@
 {
-  "name": "mjolnirmedia",
-  "version": "1.0.2",
-  "description": "Homepage for Mjolnir Media",
+  "name": "swape",
+  "version": "1.0.3",
+  "description": "Homepage for swape.net",
   "main": "public/index.html",
   "scripts": {
     "dev": "astro dev",
@@ -12,7 +12,7 @@
   "author": "Alireza Balouch",
   "license": "ISC",
   "devDependencies": {
-    "sharp": "^0.33.5",
-    "astro": "^5.3.0"
+    "sharp": "^0.34.4",
+    "astro": "^5.14.1"
   }
 }

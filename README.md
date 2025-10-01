@@ -1,6 +1,6 @@
-# Mjolnir Media Home Page
+# swape.net Home Page
 
-This is the code for https://mjolnirmedia.no/
+This is the code for https://swape.net
 
 
 
